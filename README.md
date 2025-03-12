@@ -1,3 +1,2 @@
-# Java-Biginner
-This is the biggining of the Java
-Jake Velog
+# Java-Beginner
+This is the beginning of Java Team Study
