@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise {
+public class Exercise01 {
     public static void main(String[] args) {
         String inputString = getInputString();
         String[] inputStringArray = getSplitStringArray(inputString);
