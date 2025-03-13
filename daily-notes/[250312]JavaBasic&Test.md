@@ -3,8 +3,8 @@
 ---
 
 ## IDE
-<img src="image0-project.png" width="300">
-<img src="image1-setting.png" width="300">
+<img src="image0-project.png" width="500">
+<img src="image1-setting.png" width="500">
 
 ## Java개요 및 실행 방식
 
@@ -29,7 +29,7 @@
 4. JVM이 바이트코드를 OS 기계어로 변환하여 실행
 5. 실행 결과 출력
 
-<img src="image2-jvm.png" width="300">
+<img src="image2-jvm.png" width="500">
 
 ## Java의 메모리 구조
 
@@ -54,7 +54,7 @@
 - `public static void main(String[] args) { }`
 - `System.out.println("Hello World");`
 
-![image.png](image3-psvm.png)
+<img src="image3-psvm.png" width="500">
 
 예약어 `psvm` `public static void main`생성됨
 
