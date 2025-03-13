@@ -1,5 +1,18 @@
 # [250312] Java Basic & Test
 
+## 목차
+- [IDE](#ide)
+- [Java개요 및 실행 방식](#java개요-및-실행-방식)
+- [Java의 메모리 구조](#java의-메모리-구조)
+- [Java의 기본 개념](#java의-기본-개념)
+- [변수와 데이터 타입](#변수와-데이터-타입)
+- [형변환(Type Conversion)](#형변환type-conversion)
+- [부동소수점과 정밀도](#부동소수점floating-point과-정밀도)
+- [연산자(Operators)](#연산자operators)
+- [배열(Array)](#배열array)
+- [문자열 다루기(String)](#문자열-다루기string)
+- [테스트와 JUnit](#테스트test와-junit)
+- [새로 알게된 것](#새로-알게된-것)
 ---
 
 ## IDE
