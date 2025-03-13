@@ -16,6 +16,6 @@ This is the beginning of Java Team Study.
 ## TIL
 
 - **[[250312] Java 기본 & 테스트코드](daily-notes/[250312]JavaBasic&Test.md)**  
-  _변수, 데이터 타입, 연산자, 배열과 문자열 다루기, Junit 테스트 코드 작성법_
+  _Java 기초 문법, 데이터 타입, 변수, 연산자, 배열, String 클래스, JUnit 테스트_
 - **[[250313] Java 반복문 & 제어문](daily-notes/[250313]ControlStatements&Loops.md)**  
-  _반복문, 제어문_
+  _if/switch문, for/while 반복문, 메서드 개념과 활용, 코드 최적화_
