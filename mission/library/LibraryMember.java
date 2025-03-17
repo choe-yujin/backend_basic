@@ -1,15 +1,16 @@
 package mission.library;
 
-//private 멤버 변수, 생성자, getter 및 기본 getBorrowLimit() (3권) 메서드를 구현한다.
-//
-//private 멤버 변수: name(String), membershipId(String)
-//생성자와 getter 메서드를 구현하고, 기본 대출 한도(getBorrowLimit())는 3권을 반환한다.
+/*private 멤버 변수, 생성자, getter 및 기본 getBorrowLimit() (3권) 메서드를 구현한다.
+
+private 멤버 변수: name(String), membershipId(String)
+생성자와 getter 메서드를 구현하고, 기본 대출 한도(getBorrowLimit())는 3권을 반환한다.*/
 public class LibraryMember {
+    private static final int DEFAULT_BORROW_LIMIT = 3;
     private String name;
     private String membershipId;
 
     public int getBorrowLimit() {
-        return 3;
+        return DEFAULT_BORROW_LIMIT;
     }
 
     public LibraryMember(String name, String membershipId) {
