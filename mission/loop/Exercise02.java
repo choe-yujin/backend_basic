@@ -1,3 +1,5 @@
+package mission.loop;
+
 import java.util.Scanner;
 
 public class Exercise02 {
