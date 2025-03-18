@@ -1,4 +1,4 @@
-package oop.mission.cafe;
+package mission.oop.cafe;
 
 import java.util.Scanner;
 

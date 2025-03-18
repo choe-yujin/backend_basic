@@ -1,4 +1,4 @@
-package oop.mission.cafe;
+package mission.oop.cafe;
 
 public class Cafe {
     // 바리스타가 있다

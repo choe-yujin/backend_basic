@@ -1,6 +1,6 @@
-package oop.mission.beverage.coffee;
+package mission.oop.beverage.coffee;
 
-import oop.mission.beverage.Beverage;
+import mission.oop.beverage.Beverage;
 
 public class Americano extends Beverage {
     private String name = "아메리카노";

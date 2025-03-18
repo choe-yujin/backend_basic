@@ -1,10 +1,10 @@
-package oop.mission.cafe;
+package mission.oop.cafe;
 
-import oop.mission.beverage.Menu;
-import oop.mission.beverage.coffee.Americano;
-import oop.mission.beverage.coffee.Cafelatte;
-import oop.mission.beverage.coffee.Cappuccino;
-import oop.mission.beverage.coffee.Espresso;
+import mission.oop.beverage.Menu;
+import mission.oop.beverage.coffee.Americano;
+import mission.oop.beverage.coffee.Cafelatte;
+import mission.oop.beverage.coffee.Cappuccino;
+import mission.oop.beverage.coffee.Espresso;
 
 public class Barista {
     // 바리스타는 최근 주문받은 메뉴의 가격을 기억한다.

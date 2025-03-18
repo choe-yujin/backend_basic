@@ -1,4 +1,4 @@
-package oop.mission.beverage;
+package mission.oop.beverage;
 
 public class Beverage {
     private String name;

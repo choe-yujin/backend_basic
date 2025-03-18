@@ -1,9 +1,9 @@
-package oop.mission.beverage;
+package mission.oop.beverage;
 
-import oop.mission.beverage.coffee.Americano;
-import oop.mission.beverage.coffee.Cafelatte;
-import oop.mission.beverage.coffee.Cappuccino;
-import oop.mission.beverage.coffee.Espresso;
+import mission.oop.beverage.coffee.Americano;
+import mission.oop.beverage.coffee.Cafelatte;
+import mission.oop.beverage.coffee.Cappuccino;
+import mission.oop.beverage.coffee.Espresso;
 
 public class Menu {
     private String name = "메뉴판";
