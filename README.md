@@ -22,3 +22,7 @@ This is the beginning of Java Team Study.
     _인터페이스 활용 도서 검색 기능 구현_
 - **[[250318] 연습문제5 테스트](/mission/e_bookstore/LibrarySearchTest.java)**  
   _연습문제5의 기능을 검증하는 JUnit 테스트 코드_
+- **[[250318] 연습문제6](/mission/f_generics/FruitMain.java)**  
+    _제네릭스 인터페이스 활용 과일 처리 시스템 구현_
+- **[[250318] 연습문제6 테스트](/mission/f_generics/services/FruitProcessorTest.java)**  
+  _연습문제6의 기능을 검증하는 JUnit 테스트 코드_
