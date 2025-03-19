@@ -1,4 +1,4 @@
-**미션 2: 사용자 대여 목록 관리 기능 구현**
+**미션 8: 사용자 대여 목록 관리 기능 구현**
 - **입력:**
     - 회원 정보(회원ID, 이름)와 회원별 대여 도서 (Book 객체)
 - **기능:**
@@ -11,7 +11,7 @@
 - **출력 예:**  
   "회원ID: LM001 -> 대여 도서: [Title1]; [Title2]"
 
-**미션 2 (사용자 대여 목록 관리 기능 구현):**
+**미션 8 (사용자 대여 목록 관리 기능 구현):**
 1. `LibraryMember` 클래스를 정의하여 private 멤버 변수(name, membershipId)를 선언하고, 생성자와 getter, toString()을 구현
 2. `RentalManager` 클래스를 정의하여 내부에 `Map<String, List<Book>>` 컬렉션을 선언하고,
     - `rentBook(String memberId, Book book)` 메서드로 회원의 대여 목록에 도서를 추가
