@@ -1,0 +1,2 @@
+Book{title='clean code', author='Robert C. Martin', price=45.0}
+Book{title='Effective Java', author='Joshua Bloch', price=55.0}
