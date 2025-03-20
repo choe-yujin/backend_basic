@@ -34,3 +34,7 @@ This is the beginning of Java Team Study.
   _Collection(Map, List)활용 사용자 대여 목록 관리 기능 구현_
 - **[[250319] 연습문제8 테스트](/mission/h_collection/service/LibraryServiceTests.java)**  
   _연습문제8의 기능을 검증하는 JUnit 테스트 코드_
+- **[[250320] 연습문제9](/mission/i_exception/Application.java)**  
+  _IO& exception활용 대출반납 기록 로그 파일 저장 기능 구현_
+- **[[250320] 연습문제9 테스트](/mission/i_exception/ApplicationTests.java)**  
+  _연습문제9의 기능을 검증하는 JUnit 테스트 코드_
