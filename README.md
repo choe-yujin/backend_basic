@@ -2,7 +2,13 @@
 
 This is the beginning of Java Team Study.
 
-## 연습문제 목록
+## 목차
+
+- [JAVA 연습문제](#JAVA)
+- [SQL](#SQL)
+
+
+## JAVA
 
 - **[[250312] 연습문제1](/mission/a_array/Exercise01.java)**  
   _변수, 데이터 타입, 연산자, 배열과 문자열 다루기_
@@ -38,3 +44,35 @@ This is the beginning of Java Team Study.
   _IO& exception활용 대출반납 기록 로그 파일 저장 기능 구현_
 - **[[250320] 연습문제9 테스트](/mission/i_exception/ApplicationTests.java)**  
   _연습문제9의 기능을 검증하는 JUnit 테스트 코드_
+
+
+## SQL
+
+### 기본 SQL
+
+- [SQL 기초](Script-Basic.sql) - SQL의 기본 문법과 명령어
+
+### 조인
+
+- [JOIN 연산](Script-Join.sql) - 여러 테이블을 결합하는 다양한 JOIN 유형
+
+### 그룹화
+
+- [GROUP BY](Script-Group%20by.sql) - 데이터를 그룹화하고 집계 함수
+
+### 서브쿼리
+
+- [서브쿼리](Script-Sub%20Query.sql) - 쿼리 내에 중첩된 쿼리
+
+### 뷰
+
+- [VIEW](Script-View.sql) - 가상 테이블을 생성하고 관리하는 방법
+
+### 윈도우 함수
+
+- [VIEW와 윈도우 함수 실습](Script-View%20and%20Window%20Function%20Mission.sql) - VIEW와 윈도우 함수를 활용한 실습
+
+### 트랜잭션
+
+- [트랜잭션](Script-Transaction.sql) - 데이터베이스 트랜잭션의 개념과 사용법
+- [트랜잭션 실습](Script-Transaction%20Misson.sql) - 트랜잭션을 활용한 실습
