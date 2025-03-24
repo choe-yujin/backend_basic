@@ -26,7 +26,7 @@ SQL 수업 정리 및 실습 예제입니다.
 
 ## 서브쿼리
 
-- [서브쿼리](Script-Sub%20Query.sql) - 쿼리 내에 중첩된 쿼리
+- [서브쿼리](Script-Sub%20Query.sql) - 쿼리 내에 중첩된 쿼리 & WHERE, SELECT, FROM **미션**
 
 ## 뷰
 
@@ -34,9 +34,9 @@ SQL 수업 정리 및 실습 예제입니다.
 
 ## 윈도우 함수
 
-- [VIEW와 윈도우 함수 실습](Script-View%20and%20Window%20Function%20Mission.sql) - VIEW와 윈도우 함수를 활용한 실습
+- [VIEW와 윈도우 함수 실습](Script-View%20and%20Window%20Function%20Mission.sql) - VIEW와 윈도우 함수를 활용 **미션**
 
 ## 트랜잭션
 
 - [트랜잭션](Script-Transaction.sql) - 데이터베이스 트랜잭션의 개념과 사용법
-- [트랜잭션 실습](Script-Transaction%20Misson.sql) - 트랜잭션을 활용한 실습
+- [트랜잭션 실습](Script-Transaction%20Misson.sql) - 트랜잭션 활용 **미션**
