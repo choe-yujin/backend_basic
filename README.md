@@ -6,6 +6,7 @@ This is the beginning of Java Team Study.
 
 - [JAVA 연습문제](#JAVA)
 - [SQL](#SQL)
+- [JDBC](#JDBC)
 
 
 ## JAVA
@@ -56,3 +57,7 @@ This is the beginning of Java Team Study.
 - [VIEW와 윈도우 함수 실습](SQL/Script-View%20and%20Window%20Function%20Mission.sql) - VIEW와 윈도우 함수를 활용한 실습
 - [트랜잭션](SQL/Script-Transaction.sql) - 데이터베이스 트랜잭션의 개념과 사용법
 - [트랜잭션 실습](SQL/Script-Transaction%20Misson.sql) - 트랜잭션을 활용한 실습
+
+
+## JDBC
+- [JDBC 적용 앱](Module-Jdbc/src/main/java/com/devyujin/jdbc/Application.java) - JDBC 적용하여 MySQL DB Connection 어플리케이션 연습
