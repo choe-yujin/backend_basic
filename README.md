@@ -8,6 +8,7 @@ This is the beginning of Java Team Study.
 - [SQL](#SQL)
 - [JDBC](#JDBC)
 - [JPA](#JPA)
+- [Servlet](#Servlet)
 
 ## JAVA
 
@@ -64,3 +65,6 @@ This is the beginning of Java Team Study.
 
 ## JPA
 - [JPA 적용 앱](Module-JPA/src/main/java/com/metaverse/academy/Application.java) - JPA 적용 User 로그인/프로필 수정 미션
+
+## Servlet
+- [Servlet 실습](Module-Servlet/src/main/java/com/metaverse/servlet/chap01/ServletLifeCycle.java) - Servlet 개념 학습을 위한 예제
