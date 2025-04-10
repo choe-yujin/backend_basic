@@ -7,7 +7,7 @@ This is the beginning of Java Team Study.
 - [JAVA 연습문제](#JAVA)
 - [SQL](#SQL)
 - [JDBC](#JDBC)
-
+- [JPA](#JPA)
 
 ## JAVA
 
@@ -61,3 +61,6 @@ This is the beginning of Java Team Study.
 
 ## JDBC
 - [JDBC 적용 앱](Module-Jdbc/src/main/java/com/devyujin/jdbc/Application.java) - JDBC 적용하여 MySQL DB Connection 어플리케이션 연습
+
+## JPA
+- [JPA 적용 앱](Module-JPA/src/main/java/com/metaverse/academy/Application.java) - JPA 적용 User 로그인/프로필 수정 미션
