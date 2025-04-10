@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+
+    <!-- 엔티티 매니저 팩토리를 식별하기 위한 이름 설정 -->
+    <persistence-unit name="academy-dev">
+
+        <properties>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <!-- hibernate 설정 (실행 되는 sql 구문을 format 형태로 보여준다) -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
+
+    <persistence-unit name="jpa-lesson">
+        <properties>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <!-- hibernate 설정 (실행 되는 sql 구문을 format 형태로 보여준다) -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
