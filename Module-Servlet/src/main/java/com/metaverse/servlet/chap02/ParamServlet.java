@@ -91,6 +91,7 @@ public class ParamServlet extends HttpServlet {
         req.setAttribute("method", "POST");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/chap02/page/postParams.jsp");
+        //doGet(req, resp);
         dispatcher.forward(req, resp);
     }
 }
