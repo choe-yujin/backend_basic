@@ -61,20 +61,11 @@ public class SessionServlet extends HttpServlet {
             HttpSession session = req.getSession(true);
             String existingUser = (String) session.getAttribute("loggedInUser");
 
-            // 로그인 되어 있거나, 지금 전달받은 사용자 이름과 같으면?
-            if(existingUser == null || !username.equals(existingUser)) {
-                session.setAttribute("loggedInUser", username);
-                if(secret != null && !secret.isEmpty()) {
-                    session.setAttribute("secret", secret);
-                }
-                session.setMaxInactiveInterval(30);
-            } else {
-                session.setAttribute("loggedInUser", username);
-                if(secret != null && !secret.isEmpty()) {
-                    session.setAttribute("secret", secret);
-                }
-                session.setMaxInactiveInterval(30);
+            session.setAttribute("loggedInUser", username);
+            if (secret != null && !secret.isEmpty()) {
+                session.setAttribute("secret", secret);
             }
+            session.setMaxInactiveInterval(30);
         }
         doGet(req, resp);
     }
