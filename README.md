@@ -73,7 +73,7 @@
 ## Spring-Core
 - [Spring Container](06_Spring-Core/Module01-SpringContainer/src/main/java/metaverse/chap01) - Spring 컨테이너의 구조와 Bean 관리 이해
 - [Spring DI](06_Spring-Core/Module02-DependencyInjection/src/main/java/com/metaverse/injection/chap01) - 의존성 주입(DI)의 개념과 방식 실습
-- [Spring Container](06_Spring-Core/Module03-AOP/src/main/java/com/metaverse/aop) - 관심사의 분리를 위한 AOP 개념 및 적용 예제
+- [Spring AOP](06_Spring-Core/Module03-AOP/src/main/java/com/metaverse/aop) - 관심사의 분리를 위한 AOP 개념 및 적용 예제
 
 ## Javascript-Core
 - [Javascript Core](07_Javascript-Core/01_variable_datatype) - JavaScript의 기본 문법과 데이터 타입 이해
