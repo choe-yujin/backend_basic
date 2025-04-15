@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.metaverse'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // 스프링 코어
+    implementation 'org.springframework:spring-context:5.3.30'
+
+    // 스프링 AOP
+    implementation 'org.springframework:spring-aop:5.3.30'
+
+    // AspectJ
+    implementation 'org.aspectj:aspectjrt:1.9.19'
+    implementation 'org.aspectj:aspectjweaver:1.9.19'
+
+    // 로깅
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+}
+
+test {
+    useJUnitPlatform()
+}
