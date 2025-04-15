@@ -1,6 +1,5 @@
-# Java-Beginner
-
-This is the beginning of Java Team Study.
+# Backend_Basic_TIL
+백엔드 개발 학습 과정에서 진행한 실습, 과제, 그리고 주요 개념들을 기록한 TIL 문서입니다.
 
 ## 목차
 
@@ -72,9 +71,9 @@ This is the beginning of Java Team Study.
 - [Servlet 실습](05_Servlet/Module-Servlet/src/main/java/com/metaverse/servlet/chap01/ServletLifeCycle.java) - Servlet 개념 학습을 위한 예제
 
 ## Spring-Core
-- [Spring Container](06_Spring-Core/Module01-SpringContainer/src/main/java/metaverse/chap01)
-- [Spring DI](06_Spring-Core/Module02-DependencyInjection/src/main/java/com/metaverse/injection/chap01)
-- [Spring Container](06_Spring-Core/Module03-AOP/src/main/java/com/metaverse/aop)
+- [Spring Container](06_Spring-Core/Module01-SpringContainer/src/main/java/metaverse/chap01) - Spring 컨테이너의 구조와 Bean 관리 이해
+- [Spring DI](06_Spring-Core/Module02-DependencyInjection/src/main/java/com/metaverse/injection/chap01) - 의존성 주입(DI)의 개념과 방식 실습
+- [Spring Container](06_Spring-Core/Module03-AOP/src/main/java/com/metaverse/aop) - 관심사의 분리를 위한 AOP 개념 및 적용 예제
 
 ## Javascript-Core
-- [Javascript Core](07_Javascript-Core/01_variable_datatype)
+- [Javascript Core](07_Javascript-Core/01_variable_datatype) - JavaScript의 기본 문법과 데이터 타입 이해
