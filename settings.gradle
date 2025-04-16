@@ -1,0 +1,37 @@
+rootProject.name = 'backend_basic'
+
+// 03_JDBC
+include 'Module-JDBC'
+project(':Module-JDBC').projectDir = new File(rootDir, '03_JDBC/Module-JDBC')
+
+// 04_JPA
+include 'Module-JPA'
+project(':Module-JPA').projectDir = new File(rootDir, '04_JPA/Module-JPA')
+include 'Module01-intro_lecture'
+project(':Module01-intro_lecture').projectDir = new File(rootDir, '04_JPA/Module01-intro_lecture')
+include 'Module02-Entity-Mapping'
+project(':Module02-Entity-Mapping').projectDir = new File(rootDir, '04_JPA/Module02-Entity-Mapping')
+include 'Module03-Entity-mapping'
+project(':Module03-Entity-mapping').projectDir = new File(rootDir, '04_JPA/Module03-Entity-mapping')
+include 'Module04-ValueObject'
+project(':Module04-ValueObject').projectDir = new File(rootDir, '04_JPA/Module04-ValueObject')
+include 'Module05-inheritence'
+project(':Module05-inheritence').projectDir = new File(rootDir, '04_JPA/Module05-inheritence')
+include 'Module06-jpql'
+project(':Module06-jpql').projectDir = new File(rootDir, '04_JPA/Module06-jpql')
+
+// 05_Servlet
+include 'Module-Servlet'
+project(':Module-Servlet').projectDir = new File(rootDir, '05_Servlet/Module-Servlet')
+
+// 06_Spring-Core
+include 'Module01-SpringContainer'
+project(':Module01-SpringContainer').projectDir = new File(rootDir, '06_Spring-Core/Module01-SpringContainer')
+include 'Module02-DependencyInjection'
+project(':Module02-DependencyInjection').projectDir = new File(rootDir, '06_Spring-Core/Module02-DependencyInjection')
+include 'Module03-AOP'
+project(':Module03-AOP').projectDir = new File(rootDir, '06_Spring-Core/Module03-AOP')
+
+include '01_Java-Mission'
+include '02_SQL'
+include '07_Javascript-Core' 

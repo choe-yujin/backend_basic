@@ -1,0 +1,63 @@
+plugins {
+    id 'java'
+    id 'war'  // WAR 패키징을 위한 플러그인
+}
+
+group = 'com.metaverse'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Servlet API
+    compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'  // Jakarta EE 10
+    
+    // JSTL
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0'
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
+    
+    // JSP API
+    compileOnly 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.1'
+    
+    // Test dependencies
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+// War 파일 설정
+war {
+    enabled = true
+    webAppDirName = 'src/main/webapp'
+    archiveFileName = 'Module-Servlet.war'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// 웹 애플리케이션 디렉토리 구조 설정
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+// 웹 애플리케이션 실행 설정
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+// Gradle 빌드 시 생성되는 classes 디렉토리 위치 설정
+webAppDirName = 'src/main/webapp' 

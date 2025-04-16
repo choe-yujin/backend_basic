@@ -1,2 +1,0 @@
-Member{name='Alice', membershipId='LM001'}
-Member{name='Bob', membershipId='LM002'}

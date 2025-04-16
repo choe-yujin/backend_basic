@@ -1,10 +1,15 @@
 plugins {
     id 'java'
     id 'jacoco' // jacoco를 사용하기 위한 플러그인 설정
+    id 'application' // 애플리케이션 플러그인 추가
 }
 
-group = 'org.devyujin'
+group = 'com.devyujin'
 version = '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'com.devyujin.jdbc.Application'
+}
 
 repositories {
     mavenCentral()

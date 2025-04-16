@@ -10,11 +10,8 @@ public class Application {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         System.out.println("의존성 주입 테스트");
-        PaymentServiceConstructor paymentService = context.getBean("paymentServiceField");
+        PaymentServiceConstructor paymentService = context.getBean("paymentServiceConstructor", PaymentServiceConstructor.class);
         paymentService.processPayment("naver-100", 200.0);
-        System.out.println();
-        PaymentServiceConstructor kakaoPayService = context.getBean("kakaoPayService", PaymentServiceConstructor.class);
-        kakaoPayService.processPayment("kakao-100", 200.0);
 
         ((AnnotationConfigApplicationContext)context).close();
     }

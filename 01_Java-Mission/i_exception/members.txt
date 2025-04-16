@@ -1,0 +1,3 @@
+Member{name='Alice', membershipId='LM001'}
+Member{name='Bob', membershipId='LM002'}
+Member{name='테스터', membershipId='test'}
