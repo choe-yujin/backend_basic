@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 애플리케이션 - 오류</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header th:replace="~{common/header :: headerFragment}"></header>
+
+    <div class="container" style="text-align: center; padding: 50px 0;">
+        <h2>오류가 발생했습니다</h2>
+        <div class="message message-error">
+            <p th:text="${message ?: '요청을 처리하는 중 문제가 발생했습니다.'}">오류 메시지</p>
+            <p th:if="${status}" th:text="${'Status code: ' + status}">Status code: 500</p>
+        </div>
+        
+        <div style="margin-top: 30px;">
+            <a th:href="@{/}" class="btn">홈으로 돌아가기</a>
+        </div>
+    </div>
+
+    <footer th:replace="~{common/footer :: footerFragment}"></footer>
+</body>
+</html>

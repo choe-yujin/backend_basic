@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 애플리케이션 - 게시글 상세</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header th:replace="~{common/header :: headerFragment}"></header>
+
+    <div class="container">
+        <h2>게시글 상세</h2>
+
+        <!-- 에러 메시지 표시 -->
+        <div th:if="${error}" class="message message-error" th:text="${error}"></div>
+        <div th:if="${message}" class="message message-success" th:text="${message}"></div>
+
+        <!-- 게시글 상세 정보 -->
+        <div th:if="${board != null}" class="board-detail">
+            <div class="board-header">
+                <h3 class="board-title" th:text="${board.title}">게시글 제목</h3>
+                
+                <div class="board-info">
+                    <span>작성자: 익명</span>
+                    <span style="margin-left: 20px;" th:text="${'작성일: ' + #temporals.format(board.createdDate, 'yyyy-MM-dd HH:mm')}">작성일: 2025-04-22 14:30</span>
+                    <span th:if="${board.modifiedDate != null}" style="margin-left: 20px;" th:text="${'수정일: ' + #temporals.format(board.modifiedDate, 'yyyy-MM-dd HH:mm')}">수정일: 2025-04-22 15:30</span>
+                </div>
+            </div>
+
+            <div class="board-content">
+                <p th:text="${board.content}">게시글 내용</p>
+            </div>
+
+            <!-- 버튼 영역 -->
+            <div class="board-actions">
+                <a th:href="@{/boards}" class="btn">목록</a>
+                <a th:href="@{|/boards/${board.id}/edit|}" class="btn">수정</a>
+                <button onclick="confirmDelete()" class="btn btn-danger">삭제</button>
+                
+                <!-- 삭제 확인을 위한 form -->
+                <form id="deleteForm" th:action="@{|/boards/${board.id}/delete|}" method="post" style="display: none;"></form>
+            </div>
+        </div>
+    </div>
+
+    <footer th:replace="~{common/footer :: footerFragment}"></footer>
+
+    <!-- 삭제 확인을 위한 JavaScript -->
+    <script>
+        function confirmDelete() {
+            if (confirm('정말로 이 게시글을 삭제하시겠습니까?')) {
+                document.getElementById('deleteForm').submit();
+            }
+        }
+    </script>
+</body>
+</html>

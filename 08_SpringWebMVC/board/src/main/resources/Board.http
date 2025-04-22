@@ -1,0 +1,7 @@
+POST http://localhost:8080/boards
+Content-Type: application/json
+
+{
+  "title": "Laptop",
+  "content": "이것은 내용으로 작성하는 중입니다."
+}

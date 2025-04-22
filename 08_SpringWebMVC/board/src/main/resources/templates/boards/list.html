@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 애플리케이션 - 게시글 목록</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header th:replace="~{common/header :: headerFragment}"></header>
+
+    <div class="container">
+        <h2>게시글 목록</h2>
+        
+        <!-- 성공/에러 메시지 표시 -->
+        <div th:if="${message}" class="message message-success" th:text="${message}"></div>
+        <div th:if="${error}" class="message message-error" th:text="${error}"></div>
+
+        <!-- 게시글 목록 테이블 -->
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 10%;">번호</th>
+                    <th style="width: 60%;">제목</th>
+                    <th style="width: 30%;">작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 데이터가 없는 경우 -->
+                <tr th:if="${#lists.isEmpty(boards)}">
+                    <td colspan="3" style="text-align: center;">등록된 게시글이 없습니다.</td>
+                </tr>
+
+                <!-- 데이터가 있는 경우 -->
+                <tr th:each="board : ${boards}">
+                    <td th:text="${board.id}">1</td>
+                    <td>
+                        <a th:href="@{|/boards/${board.id}|}" th:text="${board.title}">게시글 제목</a>
+                    </td>
+                    <td th:text="${#temporals.format(board.createdDate, 'yyyy-MM-dd HH:mm')}">2025-04-22</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 페이지네이션 -->
+        <div class="pagination" th:if="${pagination != null}">
+            <a th:if="${pagination.prev}" th:href="@{/boards(page=${pagination.startPage - 1})}">&laquo;</a>
+            <th:block th:each="page : ${#numbers.sequence(pagination.startPage, pagination.endPage)}">
+                <a th:href="@{/boards(page=${page})}"
+                   th:class="${pagination.currentPage == page} ? 'active' : ''"
+                   th:text="${page}">1</a>
+            </th:block>
+            <a th:if="${pagination.next}" th:href="@{/boards(page=${pagination.endPage + 1})}">&raquo;</a>
+        </div>
+
+        <!-- 글쓰기 버튼 -->
+        <div style="text-align: right; margin-top: 20px;">
+            <a th:href="@{/boards/new}" class="btn">글쓰기</a>
+        </div>
+    </div>
+
+    <footer th:replace="~{common/footer :: footerFragment}"></footer>
+</body>
+</html>
